@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-button label="Increment" variant="brand" onclick={handleAdd} class="slds-m-right_small"></lightning-button>
+        <lightning-button label="Decrement" variant="destructive" onclick={handleSubtract} class="slds-m-right_small"></lightning-button>
+        <lightning-button label="Multiply" variant="neutral" onclick={handleMultiply}></lightning-button>
+        <div class="slds-m-top_medium">
+            <lightning-input
+                type="number"
+                label="Factor"
+                value={factor}
+                onchange={handleFactorChange}
+            ></lightning-input>
+        </div>
+    </div>
+</template>
